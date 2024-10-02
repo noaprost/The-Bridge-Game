@@ -1,19 +1,8 @@
-1. 패키지 설치
-터미널에 아래 점선 사이의 내용을 붙여 넣고 엔터를 누르세요.
-----------
-npm i -D @babel/cli @babel/core @babel/preset-env babel-loader clean-webpack-plugin copy-webpack-plugin core-js cross-env html-webpack-plugin source-map-loader terser-webpack-plugin webpack webpack-cli webpack-dev-server
-----------
-npm i three
-----------
+**<게임 방법>**
+- 유리판을 클릭하여 캐릭터를 이동시킬 수 있습니다.
 
-2. 개발용 서버 구동
-터미널에 아래 점선 사이의 내용을 붙여 넣고 엔터를 누르세요.
-----------
-npm start
-----------
+눈앞에 놓인 두 종류의 유리는 강화 유리와 일반 유리 하나씩으로 구성되어있습니다.
 
-3. 빌드(배포용 파일 생성)
-터미널에 아래 점선 사이의 내용을 붙여 넣고 엔터를 누르세요.
-----------
-npm run build
-----------
+강화 유리만을 밟아 10번 성공하게 되면 게임이 클리어 됩니다.
+
+일반 유리를 선택할 경우 다리 밑으로 떨어지게되며 탈락합니다.
