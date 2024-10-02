@@ -36,12 +36,5 @@ export class Player extends Stuff {
 
       this.setCannonBody();
     });
-
-    // this.mesh = new Mesh(this.geometry, this.material);
-    // this.mesh.position.set(this.x, this.y, this.z);
-    // this.mesh.castShadow = true;
-    // this.mesh.receiveShadow = true;
-
-    // cm1.scene.add(this.mesh);
   }
 }
