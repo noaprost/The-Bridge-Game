@@ -1,4 +1,4 @@
-import { AnimationMixer, Mesh } from "three";
+import { AnimationMixer } from "three";
 import { cm1 } from "./common";
 import { Stuff } from "./Stuff";
 
