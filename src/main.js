@@ -11,7 +11,7 @@ import { SideLight } from "./SideLight";
 import { Glass } from "./Glass";
 import { Player } from "./Player";
 
-// The Bridge 게임
+// The Bridge Game
 
 // Renderer
 const canvas = document.querySelector("#three-canvas");
@@ -94,6 +94,15 @@ const defaultContactMaterial = new CANNON.ContactMaterial(
   }
 );
 
+const playerDefaultContactMaterial = new CANNON.ContactMaterial(
+  cm1.playerMaterial,
+  cm1.defaultMaterial,
+  {
+    friction: 1,
+    restitution: 0,
+  }
+);
+
 const glassDefaultContactMaterial = new CANNON.ContactMaterial(
   cm1.glassMaterial,
   cm1.defaultMaterial,
@@ -115,6 +124,7 @@ const playerGlassContactMaterial = new CANNON.ContactMaterial(
 cm1.world.defaultContactMaterial = defaultContactMaterial;
 cm1.world.addContactMaterial(glassDefaultContactMaterial);
 cm1.world.addContactMaterial(playerGlassContactMaterial);
+cm1.world.addContactMaterial(playerDefaultContactMaterial);
 
 // 물체 만들기
 const glassUnitSize = 1.2;
@@ -255,7 +265,6 @@ function checkIntersects() {
   }
 }
 
-sounds.background.play();
 let fail = false;
 let jumping = false;
 let onReplay = false;
@@ -272,10 +281,8 @@ function checkClickedObject(mesh) {
 
       switch (mesh.type) {
         case "normal":
-          console.log("normal");
           setTimeout(() => {
             fail = true;
-            sounds.background.pause();
             player.actions[0].stop();
             player.actions[1].play();
             sideLights.forEach((item) => {
@@ -294,7 +301,6 @@ function checkClickedObject(mesh) {
 
           break;
         case "strong":
-          console.log("strong");
           break;
       }
 
@@ -333,7 +339,6 @@ function checkClickedObject(mesh) {
 
         setTimeout(() => {
           sounds.clear.play();
-          sounds.background.pause();
           camera.position.set(0, 13, -18);
         }, 1000);
       }

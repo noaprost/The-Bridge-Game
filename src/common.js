@@ -56,7 +56,7 @@ export const mat = {
   glass2: new MeshPhongMaterial({
     color: cm2.glassColor,
     transparent: true,
-    opacity: 0.3,
+    opacity: 0.1,
   }),
 };
 
@@ -69,12 +69,8 @@ strongSound.src = "sounds/Wood Hit Metal Crash.mp3";
 const clearSound = new Audio();
 clearSound.src = "sounds/success fanfare trumpets.mp3";
 
-const backgroundSound = new Audio();
-backgroundSound.src = "sounds/horror house.mp3";
-
 export const sounds = {
   normal: nomarlSound,
   strong: strongSound,
   clear: clearSound,
-  background: backgroundSound,
 };
