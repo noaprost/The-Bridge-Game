@@ -128,7 +128,7 @@ cm1.world.addContactMaterial(playerDefaultContactMaterial);
 
 // 물체 만들기
 const glassUnitSize = 1.2;
-const numberOfGlasses = 10; // 유리판 개수
+const numberOfGlasses = 10;
 const objects = [];
 
 // 바닥
@@ -308,12 +308,14 @@ function checkClickedObject(mesh) {
         jumping = false;
       }, 1000);
 
+      // 유리판 위로 이동
       gsap.to(player.cannonBody.position, {
         duration: 1,
         x: mesh.position.x,
         z: glassZ[cm2.step - 1],
       });
 
+      // 플레이어의 점프 동작
       gsap.to(player.cannonBody.position, {
         duration: 0.4,
         y: 12,
