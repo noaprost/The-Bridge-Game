@@ -1,6 +1,8 @@
 ## 드라마 오징어 게임에 나오는 다리 건너기 게임
 
-**페이지** : [The Bridge Game](https://bridge-game.netlify.app/)
+### 페이지
+
+[The Bridge Game](https://bridge-game.netlify.app/)
 
 ---
 
