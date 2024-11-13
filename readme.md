@@ -12,4 +12,4 @@
 
 ---
 
-**데모 페이지** : https://bridge-game.netlify.app/
+**플레이 페이지** : https://bridge-game.netlify.app/
