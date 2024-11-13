@@ -12,4 +12,4 @@
 
 ---
 
-**플레이 페이지** : [The Bridge Game](https://bridge-game.netlify.app/)
+**사이트** : [The Bridge Game](https://bridge-game.netlify.app/)
