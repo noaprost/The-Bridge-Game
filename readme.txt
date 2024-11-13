@@ -4,4 +4,4 @@
 - 강화 유리만을 밟아 10번 성공하게 되면 게임이 클리어 됩니다.
 - 일반 유리를 선택할 경우 다리 밑으로 떨어지게되며 탈락합니다.
 
-![The Bridge Game GIF](https://github.com/user-attachments/assets/b2035492-6a6d-463d-ba21-63a0ee96a601)
+<img src="https://github.com/user-attachments/assets/b2035492-6a6d-463d-ba21-63a0ee96a601">
