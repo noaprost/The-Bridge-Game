@@ -21,5 +21,3 @@
 <img src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=flat-square&logo=javascript&logoColor=black" /> <img src="https://img.shields.io/badge/three.js-%23000000.svg?&style=flat-square&logo=three.js&logoColor=white" /> <img src="https://img.shields.io/badge/blender-%23F5792A.svg?&style=flat-square&logo=blender&logoColor=white" />
 
 라이브러리 :  Cannon.js, gsap
-
-3D 모델링 : Blender
