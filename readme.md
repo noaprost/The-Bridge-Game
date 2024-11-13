@@ -24,4 +24,4 @@
 
 ### 플레이 화면
 
-<img src="https://github.com/user-attachments/assets/b2035492-6a6d-463d-ba21-63a0ee96a601" width="70%">
+<img src="https://github.com/user-attachments/assets/5cb0243b-70bc-4625-a7e8-1e4a39c3ddc7" width="70%">
